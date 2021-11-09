@@ -40,19 +40,18 @@ const Blog = props => {
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
 
-  const prevPage =
-    currentPage - 1 === 1 ? `/blogs` : `/blogs/${currentPage - 1}`
-  const nextPage = `/blogs/${currentPage + 1}`
+  const prevPage = currentPage - 1 === 1 ? `/blog` : `/blog/${currentPage - 1}`
+  const nextPage = `/blog/${currentPage + 1}`
   const { data } = props
   return (
     <>
-      <Seo title="Blogs" />
+      <Seo title="Blog Posts" />
       <Layout>
-        <SimpleBanner title="Trade news">
+        <SimpleBanner title="Blog Posts">
           <StaticImage
             className="banner__image"
-            src="../images/iphone-camera.jpg"
-            alt="Apple iPhone camera"
+            src="../images/good_boy.jpeg"
+            alt="Smiling Corgi named Leo"
           />
         </SimpleBanner>
         <BlogItems>
@@ -72,7 +71,7 @@ const Blog = props => {
               return (
                 <Link
                   key={i}
-                  to={`/blogs/${i === 0 ? "" : i + 1}`}
+                  to={`/blog/${i === 0 ? "" : i + 1}`}
                   className={i + 1 === currentPage ? "btn btn-active" : "btn"}
                 >
                   {i + 1}

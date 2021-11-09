@@ -35,7 +35,7 @@ const Blog = ({ data }) => {
             <article className="blogsingle__content">
               {renderRichText(richText, options)}
               <div className="blogsingle__back">
-                <Button to="/blogs" text="Back to news" as={Link} />
+                <Button to="/blog" text="Back to all posts" as={Link} />
               </div>
             </article>
           </BlogSingleStyles>

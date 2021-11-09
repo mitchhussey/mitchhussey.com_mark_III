@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const GlobalStyle = createGlobalStyle`
 :root {
   --background: #000;
-  --primary: #ffc400;
+  --primary: #DAA520;
   --bannerTitle: 34px;
   --bannerSubTitle: 20px;
   --borderSpacing: 30px;

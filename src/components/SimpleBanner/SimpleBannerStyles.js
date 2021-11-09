@@ -26,6 +26,13 @@ export const SimpleBannerStyles = styled.section`
     z-index: 2;
     height: 20vh;
     width: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(000, 000, 000, 0) 20%,
+      rgb(0 0 0 / 50%) 80%
+    );
+    padding: 18px;
+    border-radius: 18px;
 
     @media (min-width: 768px) {
       width: 66vw;

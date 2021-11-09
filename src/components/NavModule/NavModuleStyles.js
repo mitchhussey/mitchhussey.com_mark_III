@@ -7,14 +7,12 @@ export const NavModuleStyles = styled.nav`
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: 20px var(--borderSpacing) 0 var(--borderSpacing);
+    padding: 20px var(--borderSpacing) 20px var(--borderSpacing);
+    backdrop-filter: blur(10px) brightness(0.6);
 
     @media (min-width: 1024px) {
-      padding-top: 50px;
-    }
-
-    @media (min-width: 1440px) {
-      padding-top: 70px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
 
@@ -26,6 +24,7 @@ export const NavModuleStyles = styled.nav`
     padding: 0;
     cursor: pointer;
     outline: none;
+    filter: drop-shadow(2px 4px 6px black);
 
     &:focus {
       border: none;
@@ -49,6 +48,11 @@ export const NavModuleStyles = styled.nav`
     font-weight: 700;
     font-size: 20px;
     letter-spacing: -0.5px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    padding: 0px 8px;
+    transition: border 0.3s ease;
+    filter: drop-shadow(2px 4px 6px black);
 
     a {
       color: #fff;
@@ -69,6 +73,7 @@ export const NavModuleStyles = styled.nav`
       a {
         color: var(--primary);
       }
+      border: 2px solid var(--primary);
     }
   }
 

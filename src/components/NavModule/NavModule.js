@@ -18,6 +18,9 @@ const NavModule = () => {
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
+  const closeNav = () => {
+    setNav(true)
+  }
 
   const { title } = UseSiteMetadata()
 
@@ -25,6 +28,11 @@ const NavModule = () => {
     <NavModuleStyles>
       <div className="nav">
         <div className="container">
+          {title && (
+            <div className="logo" onClick={closeNav}>
+              <Link to="/">M/H</Link>
+            </div>
+          )}
           <motion.button
             initial="closed"
             animate={isOpen ? "open" : "closed"}
@@ -45,15 +53,6 @@ const NavModule = () => {
               variants={barThreeVariants}
             ></motion.span>
           </motion.button>
-
-          {title && (
-            <div className="logo">
-              <Link to="/">
-                {title}
-                <span>.</span>
-              </Link>
-            </div>
-          )}
         </div>
       </div>
       <motion.div

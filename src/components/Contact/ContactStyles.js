@@ -9,14 +9,14 @@ export const ContactStyles = styled.section`
   input {
     height: 50px;
     margin-bottom: 1.25rem;
-
     @media (min-width: 1200px) {
       margin-bottom: 1.875rem;
     }
   }
   input,
   textarea {
-    background-color: #000;
+    background-color: #0c0c0c;
+    border-radius: 4px;
     color: #fff;
     border: none;
     border-bottom: 3px solid var(--inActive);

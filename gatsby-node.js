@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.products.edges.forEach(({ node }) => {
     createPage({
-      path: `products/${node.slug}`,
+      path: `reviews/${node.slug}`,
       component: path.resolve("src/templates/product-template.js"),
       context: {
         slug: node.slug,
@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   data.posts.edges.forEach(({ node }) => {
     createPage({
-      path: `blogs/${node.slug}`,
+      path: `blog/${node.slug}`,
       component: path.resolve("src/templates/blog-template.js"),
       context: {
         slug: node.slug,
@@ -49,7 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/blogs` : `/blogs/${i + 1}`,
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
       component: path.resolve("./src/templates/blog-list-template.js"),
       context: {
         limit: postsPerPage,

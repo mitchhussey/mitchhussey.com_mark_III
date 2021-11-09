@@ -40,7 +40,16 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <p>
-            Designed & developed by{" "}
+            Created by{" "}
+            <a
+              href="https://www.twitter.com/mitch_hussey"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mitch Hussey
+            </a>
+            <span>. </span>
+            Initial design by{" "}
             <a
               href="https://www.morganbaker.dev"
               target="_blank"
@@ -48,7 +57,6 @@ const Footer = () => {
             >
               Morgan Baker
             </a>
-            <span>.</span>
           </p>
         </div>
       </div>

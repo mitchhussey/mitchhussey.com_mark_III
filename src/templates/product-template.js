@@ -51,7 +51,7 @@ const productTemplate = ({ data }) => {
 
   return (
     <>
-      <Seo title={name} />
+      <Seo title={`${name} Review`} />
       <Layout>
         <BannerModule
           title={name}

@@ -26,6 +26,14 @@ export const BannerModuleStyles = styled.section`
     z-index: 2;
     min-height: 33vh;
     width: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(000, 000, 000, 0) 20%,
+      rgb(0 0 0 / 50%) 80%
+    );
+    border-radius: 18px;
+    padding: 20px;
+    backdrop-filter: blur(1px);
 
     @media (min-width: 768px) {
       width: 66vw;

@@ -31,6 +31,7 @@ const Features = () => {
   return (
     <ProductsStyles>
       <div className="features__container">
+        {/* <h4>Featured Reviews</h4> */}
         <div className="features__container--scroll">
           {products.map(({ node }) => {
             return <Product feature={node} />

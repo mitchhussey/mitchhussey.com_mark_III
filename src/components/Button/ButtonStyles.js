@@ -11,6 +11,7 @@ export const ButtonStyles = styled.button`
   padding: 0;
   height: 36px;
   line-height: 36px;
+  margin-right: 16px;
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;

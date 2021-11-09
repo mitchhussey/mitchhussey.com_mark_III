@@ -1,9 +1,10 @@
 import * as React from "react"
 import {
-  FaFacebookSquare as Facebook,
+  FaGithubSquare as Github,
   FaTwitterSquare as Twitter,
-  FaInstagram as Instagram,
+  FaInstagramSquare as Instagram,
   FaLinkedin as Linkedin,
+  FaYoutubeSquare as Youtube,
 } from "react-icons/fa"
 
 export const menuItems = [
@@ -12,8 +13,8 @@ export const menuItems = [
     text: "home",
   },
   {
-    path: "/products",
-    text: "products",
+    path: "/reviews",
+    text: "reviews",
   },
   {
     path: "/blog",
@@ -27,19 +28,23 @@ export const menuItems = [
 
 export const socialItems = [
   {
-    path: "www.facebook.com",
-    icon: <Facebook />,
-  },
-  {
-    path: "www.twitter.com",
-    icon: <Twitter />,
-  },
-  {
-    path: "www.instagram.com",
+    path: "https://www.instagram.com/mitch_hussey",
     icon: <Instagram />,
   },
   {
-    path: "www.linkedin.com",
+    path: "https://www.youtube.com/mitch_hussey",
+    icon: <Youtube />,
+  },
+  {
+    path: "https://www.twitter.com/mitch_hussey",
+    icon: <Twitter />,
+  },
+  {
+    path: "https://www.linkedin.com/in/mitchhussey",
     icon: <Linkedin />,
+  },
+  {
+    path: "https://www.github.com/mitchhussey",
+    icon: <Github />,
   },
 ]

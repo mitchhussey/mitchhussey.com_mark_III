@@ -32,11 +32,11 @@ export const ProductsStyles = styled.section`
         height: 14px;
       }
       &::-webkit-scrollbar-thumb {
-        background: #ffc400;
+        background: #daa520;
         border-radius: 0px;
       }
       &::-webkit-scrollbar-thumb:hover {
-        background: #ffc400;
+        background: #daa520;
       }
       &::-webkit-scrollbar-track {
         background: #505050;
