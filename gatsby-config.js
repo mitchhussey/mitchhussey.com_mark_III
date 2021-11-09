@@ -50,13 +50,6 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: `/website-icon.png`,
-        background_color: `#000000`,
-      },
-    },
     `gatsby-plugin-playground`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
